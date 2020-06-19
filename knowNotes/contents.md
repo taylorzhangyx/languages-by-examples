@@ -17,8 +17,6 @@ Understand how, why, and when.
 
 
 
-
-
 ```
 2.精通Java，熟悉spring，mybatis, redis等主流开源组件和框架；
 
