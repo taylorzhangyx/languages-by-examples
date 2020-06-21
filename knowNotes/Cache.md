@@ -1,5 +1,11 @@
 # Cache
 
+When we talk about Cache, we need to consider the following:
+- Read/write speed.
+- Memory usage.
+- Disk I/O dumping.
+- Scaling.
+
 ## General
 Cache，缓存，常见于系统设计中为了提高数据读取的性能而添加的一种存储方式。
 缓存的工作原理简单来讲是将花费时间较长的读取数据请求结果，存放至内存中，使数据库不必处理第一次之后的相同请求，而使直接读取结果。
@@ -37,3 +43,6 @@ However, since the cache now is the sourth of truth, in case of the error or acc
 
 It abstracts the memory of the computer and make that part of memory public to the applications. The shared memory is more like a shared fast database which can tempararily store the data.
 Without memcached, the memory for each application is seperated and memcache can never share between the nodes/replicas. But with this, memcached published a chunck of memory so all the nodes can access the same memory for data.
+
+
+## Redis
